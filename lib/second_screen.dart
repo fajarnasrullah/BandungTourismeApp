@@ -2,11 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
-  final String name;
-  const SecondScreen(this.name, {Key? key}) : super(key: key);
+  final String textFromEvent;
+  const SecondScreen(
+      // this.name,
+      {Key? key, required this.textFromEvent}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    String name = '';
     return Scaffold(
       appBar: AppBar(
         title: const Text('Second Screen'),
@@ -15,7 +18,7 @@ class SecondScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(name),
+            Text(textFromEvent),
             OutlinedButton(
               child: const Text('Kembali'),
               onPressed: () {

@@ -13,6 +13,7 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Wisata Bandung'),
+
       ),
       body: ListView.builder(
           itemBuilder: (context, index) {

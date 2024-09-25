@@ -5,7 +5,7 @@ import 'package:untitledflutter/model/tourism_model.dart';
 
 
 class DetailScreen extends StatelessWidget {
-  final TourismPlace place;
+  final TourismPlace  place;
   const DetailScreen({Key? key, required this.place,}) : super(key: key);
 
 
@@ -45,6 +45,7 @@ class DetailScreen extends StatelessWidget {
         ),
 
                     Container(
+
                       margin: const EdgeInsets.only(top: 16.0),
                       child: Text(
                         place.name,
