@@ -62,6 +62,7 @@ class DetailEvent extends StatelessWidget {
               ),
             ),
 
+
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Text(
@@ -121,13 +122,17 @@ class DetailEvent extends StatelessWidget {
                 children: [
                   Icon(Icons.location_on_outlined,color: Colors.cyan,),
                   SizedBox(width: 8.0,),
-                  Text(
-                      style: TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.black
+                  Expanded(
+                      child: Text(
+                          style: TextStyle(
+                              fontSize: 14.0,
+                              color: Colors.black
+                          ),
+                          'Golden Ballroom - The Sultan Hotel & Residence, Jakarta',
+                        // overflow: TextOverflow.ellipsis,
                       ),
-                      'Golden Ballroom - The Sultan Hotel & Residence, Jakarta'
-                  ),
+                  )
+
                 ],
               )
             ),
